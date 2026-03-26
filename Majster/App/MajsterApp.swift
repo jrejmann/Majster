@@ -11,7 +11,7 @@ import SwiftUI
 struct MajsterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  AllCategoriesView.swift
+//  CategoriesListView.swift
 //  Majster
 //
 //  Created by Jakub Rejmann on 25/03/2026.
@@ -29,5 +29,7 @@ struct CategoriesListView: View {
 }
 
 #Preview {
-    CategoriesListView()
+    NavigationStack {
+        CategoriesListView()
+    }
 }

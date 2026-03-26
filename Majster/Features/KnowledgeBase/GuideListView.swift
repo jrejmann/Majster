@@ -120,8 +120,9 @@ struct GuideRow: View {
                         .lineLimit(2)
                     
                     HStack(spacing: 12) {
-                        Label(guide.difficulty, systemImage: "chart.bar.fill")
-                        Label(guide.timeEstimate, systemImage: "clock.fill")
+                        Label(guide.difficulty.rawValue, systemImage: guide.difficulty.icon)
+                            .foregroundColor(guide.difficulty.color)
+                        Label("\(guide.duration.rawValue) · \(guide.duration.hint)", systemImage: guide.duration.icon)
                     }
                     .font(.caption)
                     .foregroundColor(.secondary)
